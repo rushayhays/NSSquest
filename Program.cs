@@ -99,6 +99,8 @@ namespace Quest
             Prize questPrize = new Prize("One Gold Coin");
 
             bool doYouWantToContinue = true;
+
+            //This is where the adventure starts
             while(doYouWantToContinue){
                 // A list of challenges for the Adventurer to complete
                 // Note we can use the List class here because have the line "using System.Collections.Generic;" at the top of the file.
@@ -129,6 +131,10 @@ namespace Quest
 
                 //This is where the Prize is displayed
                 questPrize.ShowPrize(theAdventurer);
+
+                //Here we take the number of completed challenges and add to the Awesome score
+                int AwesometoAdd = theAdventurer.SuccessfulChallenges*10;
+                theAdventurer.Awesomeness += AwesometoAdd;
 
                 //This section asks the adventurer if they want to play again
                 Console.WriteLine("Do you want to Continue(y/n)");

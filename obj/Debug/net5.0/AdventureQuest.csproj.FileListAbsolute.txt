@@ -1,0 +1,16 @@
+C:\Users\rusha\workspace\csharp\AdventureQuest\bin\Debug\net5.0\AdventureQuest.exe
+C:\Users\rusha\workspace\csharp\AdventureQuest\bin\Debug\net5.0\AdventureQuest.deps.json
+C:\Users\rusha\workspace\csharp\AdventureQuest\bin\Debug\net5.0\AdventureQuest.runtimeconfig.json
+C:\Users\rusha\workspace\csharp\AdventureQuest\bin\Debug\net5.0\AdventureQuest.runtimeconfig.dev.json
+C:\Users\rusha\workspace\csharp\AdventureQuest\bin\Debug\net5.0\AdventureQuest.dll
+C:\Users\rusha\workspace\csharp\AdventureQuest\bin\Debug\net5.0\ref\AdventureQuest.dll
+C:\Users\rusha\workspace\csharp\AdventureQuest\bin\Debug\net5.0\AdventureQuest.pdb
+C:\Users\rusha\workspace\csharp\AdventureQuest\obj\Debug\net5.0\AdventureQuest.csproj.AssemblyReference.cache
+C:\Users\rusha\workspace\csharp\AdventureQuest\obj\Debug\net5.0\AdventureQuest.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rusha\workspace\csharp\AdventureQuest\obj\Debug\net5.0\AdventureQuest.AssemblyInfoInputs.cache
+C:\Users\rusha\workspace\csharp\AdventureQuest\obj\Debug\net5.0\AdventureQuest.AssemblyInfo.cs
+C:\Users\rusha\workspace\csharp\AdventureQuest\obj\Debug\net5.0\AdventureQuest.csproj.CoreCompileInputs.cache
+C:\Users\rusha\workspace\csharp\AdventureQuest\obj\Debug\net5.0\AdventureQuest.dll
+C:\Users\rusha\workspace\csharp\AdventureQuest\obj\Debug\net5.0\ref\AdventureQuest.dll
+C:\Users\rusha\workspace\csharp\AdventureQuest\obj\Debug\net5.0\AdventureQuest.pdb
+C:\Users\rusha\workspace\csharp\AdventureQuest\obj\Debug\net5.0\AdventureQuest.genruntimeconfig.cache

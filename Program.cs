@@ -50,12 +50,16 @@ namespace Quest
                 ShininessLevel = 10
             };
 
+
             // Make a new "Adventurer" object using the "Adventurer" class
             Console.WriteLine("What is your name Adventurer:");
             string advName = Console.ReadLine();
             Adventurer theAdventurer = new Adventurer(advName, adventurersRobe, adventurersHat);
             string userDescription = theAdventurer.GetDescription();
             Console.WriteLine(userDescription);
+
+            //Initialze the Prize here after the Adventurer is created
+            Prize questPrize = new Prize("One Gold Coin");
 
             bool doYouWantToContinue = true;
             while(doYouWantToContinue){
@@ -90,6 +94,11 @@ namespace Quest
                 {
                     Console.WriteLine("I guess you did...ok? ...sorta. Still, you should get out of my sight.");
                 }
+                
+                //This is where the Prize is displayed
+                questPrize.ShowPrize(theAdventurer);
+
+                //This section asks the adventurer if they want to play again
                 Console.WriteLine("Do you want to Continue(y/n)");
                 string contAnswer = Console.ReadLine();
                 if(contAnswer == "n"){

@@ -31,6 +31,43 @@ namespace Quest
                         4, 20
                     );
 
+            Challenge phineasAndFerb = new Challenge(
+                @"What is the name of Phineas's brother?
+                1)Pherb
+                2)Fern
+                3)Ferb
+                4)Milo Murphy
+            ",3,20);
+
+            Challenge bridgeOfDoom = new Challenge(
+                @"What is your favorite color?
+                1)Blue
+                2)Blue..No, YELLOW!!!!
+                3)5
+            ",1,30);
+
+            List<Challenge> allChallenges = new List<Challenge>()
+            {
+                twoPlusTwo,
+                theAnswer,
+                whatSecond,
+                guessRandom,
+                favoriteBeatle,
+                phineasAndFerb,
+                bridgeOfDoom
+            };
+
+            List<int> GetQuest(){
+                List<int> selectedChallengeIndexes = new List<int>();
+                while(selectedChallengeIndexes.Count < 5){
+                    int random = new Random().Next(0, allChallenges.Count);
+                    if(!selectedChallengeIndexes.Contains(random)){
+                        selectedChallengeIndexes.Add(random);
+                    }
+                }
+                return selectedChallengeIndexes;
+            }
+
             // "Awesomeness" is like our Adventurer's current "score"
             // A higher Awesomeness is better
 
@@ -65,19 +102,14 @@ namespace Quest
             while(doYouWantToContinue){
                 // A list of challenges for the Adventurer to complete
                 // Note we can use the List class here because have the line "using System.Collections.Generic;" at the top of the file.
-                List<Challenge> challenges = new List<Challenge>()
-                {
-                    twoPlusTwo,
-                    theAnswer,
-                    whatSecond,
-                    guessRandom,
-                    favoriteBeatle
-                };
+                List<int> selectedChallengeIndex = GetQuest();
+
+
 
                 // Loop through all the challenges and subject the Adventurer to them
-                foreach (Challenge challenge in challenges)
+                foreach (int challengeIndex in selectedChallengeIndex)
                 {
-                    challenge.RunChallenge(theAdventurer);
+                    allChallenges[challengeIndex].RunChallenge(theAdventurer);
                 }
 
                 // This code examines how Awesome the Adventurer is after completing the challenges
@@ -94,7 +126,7 @@ namespace Quest
                 {
                     Console.WriteLine("I guess you did...ok? ...sorta. Still, you should get out of my sight.");
                 }
-                
+
                 //This is where the Prize is displayed
                 questPrize.ShowPrize(theAdventurer);
 

@@ -40,10 +40,18 @@ namespace Quest
             int minAwesomeness = 0;
             int maxAwesomeness = 100;
 
+            //Make a robe for the adventurer
+            Robe adventurersRobe = new Robe(){
+                Colors = new List<string>{"red", "blue", "green"},
+                Length = 52
+            };
+
             // Make a new "Adventurer" object using the "Adventurer" class
             Console.WriteLine("What is your name Adventurer:");
             string advName = Console.ReadLine();
-            Adventurer theAdventurer = new Adventurer(advName);
+            Adventurer theAdventurer = new Adventurer(advName, adventurersRobe);
+            string userDescription = theAdventurer.GetDescription();
+            Console.WriteLine(userDescription);
 
             bool doYouWantToContinue = true;
             while(doYouWantToContinue){
